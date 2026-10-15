@@ -1,4 +1,3 @@
-```python
 from __future__ import annotations
 
 from urllib.parse import urlparse, parse_qs
@@ -325,4 +324,3 @@ async def main() -> None:
         Actor.log.info(
             f"Selesai. Total record produk disimpan: {saved_count}"
         )
-```
