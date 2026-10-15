@@ -1,4 +1,3 @@
-```json
 {
     "$schema": "https://apify.com/schemas/v1/input.ide.json",
     "title": "Waterlily Literary Shopee Scraper",
@@ -68,4 +67,3 @@
         "shopUrl"
     ]
 }
-```
