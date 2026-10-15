@@ -10,6 +10,10 @@
             "type": "array",
             "description": "Daftar keyword produk yang ingin dicari di Shopee.",
             "editor": "stringList",
+            "default": [
+                "atomic habits",
+                "the psychology of money"
+            ],
             "prefill": [
                 "atomic habits",
                 "the psychology of money"
