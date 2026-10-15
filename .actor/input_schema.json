@@ -1,14 +1,22 @@
-
+```json
 {
     "$schema": "https://apify.com/schemas/v1/input.ide.json",
-    "title": "Shopee Product Scraper",
+    "title": "Waterlily Literary Shopee Scraper",
     "type": "object",
     "schemaVersion": 1,
     "properties": {
+        "shopUrl": {
+            "title": "Shopee Shop URL",
+            "type": "string",
+            "description": "URL toko Shopee yang akan diambil produknya.",
+            "editor": "textfield",
+            "default": "https://shopee.co.id/waterlilyliterary",
+            "prefill": "https://shopee.co.id/waterlilyliterary"
+        },
         "keywords": {
             "title": "Search Keywords",
             "type": "array",
-            "description": "Daftar keyword produk yang ingin dicari di Shopee.",
+            "description": "Daftar keyword untuk memfilter produk dari toko tersebut. Kosongkan jika ingin mengambil semua produk.",
             "editor": "stringList",
             "default": [
                 "atomic habits",
@@ -47,16 +55,17 @@
             "default": "ID"
         },
         "maxItems": {
-            "title": "Maximum Products per Keyword",
+            "title": "Maximum Products",
             "type": "integer",
-            "description": "Target maksimum jumlah produk untuk setiap keyword.",
+            "description": "Maksimum jumlah produk yang akan diambil dari toko.",
             "editor": "number",
-            "default": 20,
+            "default": 40,
             "minimum": 1,
             "maximum": 200
         }
     },
     "required": [
-        "keywords"
+        "shopUrl"
     ]
 }
+```
